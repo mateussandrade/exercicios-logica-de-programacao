@@ -1,13 +1,12 @@
-﻿using System;
-;
+using System;
+
 namespace Atividades
 {
     class Program
     {
-        static void Main(string[] args)
+         static void Main(string[] args)
         {
             int escolha;
-
 
             Console.WriteLine("Escolha sua atividade opções de 1-5");
             escolha = Convert.ToInt32((Console.ReadLine()));
@@ -15,14 +14,13 @@ namespace Atividades
             {
                 case 1:
                     Console.WriteLine("Você Escolheu Atividade 1 - SOMA");
-                    double a, b, c, d, e, f, soma, soma2, soma3;
-                    a = 10; b = 30; c = -30; d = 10; e = 0; f = 0;
-                    soma = a + b; soma2 = c + d; soma3 = e + f;
-                    Console.WriteLine("Atividade 1 - Soma");
-                    Console.WriteLine("A soma de " + a + "+" + b + " é igual a " + soma);
-                    Console.WriteLine("A soma de " + c + "+" + d + " é igual a " + soma2);
-                    Console.WriteLine("A soma de " + e + "+" + f + " é igual a " + soma3);
-                    
+                    double a, b, soma;
+                    Console.WriteLine("Digite o primeiro valor:");
+                    a = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Digite o segundo valor:");
+                    b = Convert.ToDouble(Console.ReadLine());                    
+                    soma = a + b;
+                    Console.WriteLine("Total:" + "\n" + a + "+" + b + "=" + soma);                                   
                     break;
 
                 case 2:                    
